@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Top Icons Section -->
+    <div class="bg-green-600 flex justify-end py-2 px-4 space-x-4">
+        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
+            <img src="./logo/facebook.png" alt="Facebook" class="h-6 w-6">
+        </a>
+        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
+            <img src="./logo/instagram.png" alt="Instagram" class="h-6 w-6">
+        </a>
+        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
+            <img src="./logo/youtube.png" alt="YouTube" class="h-6 w-6">
+        </a>
+        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
+            <img src="./logo/linkedin.png" alt="LinkedIn" class="h-6 w-6">
+        </a>
+    </div>
+
+    <!-- Navbar Section -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="flex items-center space-x-2">
+                <img src="./images/logo.png" alt="Logo" class="h-20">
+            </div>
+
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="#" class="text-green-700 font-medium hover:text-black">Home</a>
+                <a href="#" class="text-green-700 font-medium hover:text-black">About Us</a>
+                <a href="#" class="text-green-700 font-medium hover:text-black">Services</a>
+                <a href="#" class="text-green-700 font-medium hover:text-black">Products</a>
+                <a href="#" class="text-green-700 font-medium hover:text-black">Blog</a>
+                <a href="#" class="text-green-700 font-medium hover:text-black">Contact Us</a>
+            </nav>
+
+            <button class="hidden md:block bg-green-600 text-white px-4 py-2 hover:bg-black">
+                Call Now
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden flex items-center text-green-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-green-600 text-white px-6 py-4">
+            <a href="index.html" class="block py-2 hover:text-black">Home</a>
+            <a href="#" class="block py-2 hover:text-black">About Us</a>
+            <a href="#" class="block py-2 hover:text-black">Services</a>
+            <a href="#" class="block py-2 hover:text-black">Products</a>
+            <a href="#" class="block py-2 hover:text-black">Blog</a>
+            <a href="#" class="block py-2 hover:text-black">Contact Us</a>
+            <button class="bg-white text-green-600 font-medium px-4 py-2 mt-4 hover:bg-black">
+                Call Now
+            </button>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <div class="relative bg-cover bg-center h-screen" style="background-image: url('./images/roofImage.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full px-8">
+            <div class="text-center text-white animate-fade-in-up max-w-3xl space-y-6">
+                <h1 class="text-3xl font-bold sm:text-2xl lg:text-3xl leading-tight">
+                    THE PREMIER <br /> NORTHERN INDIANA <br /> ROOFING COMPANY
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-xl leading-relaxed">
+                    Integrity Roofing is one of the fastest growing roofing companies in the Northern Indiana area. We
+                    specialize in roof repairs, replacements, and emergency services. Give us a call for a free
+                    estimate!
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="tel:+123456789" class="bg-green-600 text-white px-8 py-3  font-semibold hover:bg-black">
+                        Call Us
+                    </a>
+                    <a href="mailto:info@roofing.com"
+                        class="bg-green-600 text-white px-8 py-3  font-semibold hover:bg-black">
+                        Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Customer Reviews -->
+
+    <section class="py-12  mt-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-10">
+                See What Our Customers Are Saying
+            </h2>
+
+            <div class="flex flex-col items-center space-y-3 mb-5">
+                <p class="text-xl font-semibold">Excellent</p>
+                <div class="flex space-x-1">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                        class="w-6 h-6 text-yellow-500">
+                        <path
+                            d="M12 .587l3.668 7.429L23.32 9.17l-5.591 5.387 1.322 7.703L12 18.623l-6.751 3.637 1.322-7.703-5.591-5.387 7.652-1.154z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                        class="w-6 h-6 text-yellow-500">
+                        <path
+                            d="M12 .587l3.668 7.429L23.32 9.17l-5.591 5.387 1.322 7.703L12 18.623l-6.751 3.637 1.322-7.703-5.591-5.387 7.652-1.154z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                        class="w-6 h-6 text-yellow-500">
+                        <path
+                            d="M12 .587l3.668 7.429L23.32 9.17l-5.591 5.387 1.322 7.703L12 18.623l-6.751 3.637 1.322-7.703-5.591-5.387 7.652-1.154z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                        class="w-6 h-6 text-yellow-500">
+                        <path
+                            d="M12 .587l3.668 7.429L23.32 9.17l-5.591 5.387 1.322 7.703L12 18.623l-6.751 3.637 1.322-7.703-5.591-5.387 7.652-1.154z" />
+                    </svg>
+
+                </div>
+                <p class="text-gray-500 ">
+                    Based on <span class="font-semibold">81 reviews</span> on <span
+                        class="text-blue-500 font-bold ">Google</span>
+                </p>
+            </div>
+
+            <div class="relative max-w-6xl mx-auto overflow-hidden  mt-10">
+                <div id="carousel" class="flex gap-6 transition-transform duration-500">
+                    <div class="review-card bg-white  border-2 p-6 w-80 flex-shrink-0">
+                        <div class="flex justify-center mb-4">
+                            <img src="./images/customerOne.png" alt="Customer Photo"
+                                class="w-20 h-20 rounded-full object-cover">
+                        </div>
+                        <p class="text-lg text-gray-700">"Fantastic service, highly professional team!"</p>
+                        <div class="flex justify-center mt-4">
+                            <span class="text-yellow-500 text-xl">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-500 font-semibold">- Rose Doe</p>
+                    </div>
+                    <div class="review-card bg-white  border-2 p-6 w-80 flex-shrink-0">
+                        <div class="flex justify-center mb-4">
+                            <img src="./images/customerTwo.png" alt="Customer Photo"
+                                class="w-20 h-20 rounded-full object-cover">
+                        </div>
+                        <p class="text-lg text-gray-700">"They exceeded all my expectations. Highly recommend!"</p>
+                        <div class="flex justify-center mt-4">
+                            <span class="text-yellow-500 text-xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-500 font-semibold">- Sarah Johnson</p>
+                    </div>
+                    <div class="review-card bg-white  border-2 p-6 w-80 flex-shrink-0">
+                        <div class="flex justify-center mb-4">
+                            <img src="./images/customerThree.png" alt="Customer Photo"
+                                class="w-20 h-20 rounded-full object-cover">
+                        </div>
+                        <p class="text-lg text-gray-700">"Exceptional quality and attention to detail!"</p>
+                        <div class="flex justify-center mt-4">
+                            <span class="text-yellow-500 text-xl">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-500 font-semibold">- Robert Lee</p>
+                    </div>
+                    <div class="review-card bg-white  border-2 p-6 w-80 flex-shrink-0">
+                        <div class="flex justify-center mb-4">
+                            <img src="./images/customerOne.png" alt="Customer Photo"
+                                class="w-20 h-20 rounded-full object-cover">
+                        </div>
+                        <p class="text-lg text-gray-700">"Very satisfied with their work and professionalism."</p>
+                        <div class="flex justify-center mt-4">
+                            <span class="text-yellow-500 text-xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-500 font-semibold">- Emily Davis</p>
+                    </div>
+                    <div class="review-card bg-white  border-2 p-6 w-80 flex-shrink-0">
+                        <div class="flex justify-center mb-4">
+                            <img src="./images/customerTwo.png" alt="Customer Photo"
+                                class="w-20 h-20 rounded-full object-cover">
+                        </div>
+                        <p class="text-lg text-gray-700">"Very satisfied with their work and professionalism."</p>
+                        <div class="flex justify-center mt-4">
+                            <span class="text-yellow-500 text-xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-500 font-semibold">- Emily Davis</p>
+                    </div>
+                    <div class="review-card bg-white  border-2 p-6 w-80 flex-shrink-0">
+                        <div class="flex justify-center mb-4">
+                            <img src="./images/customerThree.png" alt="Customer Photo"
+                                class="w-20 h-20 rounded-full object-cover">
+                        </div>
+                        <p class="text-lg text-gray-700">"Very satisfied with their work and professionalism."</p>
+                        <div class="flex justify-center mt-4">
+                            <span class="text-yellow-500 text-xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-500 font-semibold">- Emily Davis</p>
+                    </div>
+                </div>
+
+
+                <div class="absolute inset-y-0 flex items-center justify-between px-4 w-full">
+                    <button id="prev" class="p-2 bg-gray-200 rounded-full shadow hover:bg-gray-300 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                            <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+                        </svg>
+                    </button>
+                    <button id="next" class="p-2 bg-gray-200 rounded-full shadow hover:bg-gray-300 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Leader in Roofing -->
+
+    <section class="max-w-7xl mx-auto my-10 px-5 mt-20">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+
+            <div class="relative w-full overflow-hidden carousel-container">
+                <div class="flex transition-transform duration-500" id="carousel-images">
+                    <img src="./images/roofImageTwo.png" alt="Roof Image 1"
+                        class="w-full h-64 md:h-80 object-cover flex-shrink-0">
+                    <img src="./images/roofImageThree,png.avif" alt="Roof Image 2"
+                        class="w-full h-64 md:h-80 object-cover flex-shrink-0">
+                    <img src="./images/roofImageFour.png" alt="Roof Image 3"
+                        class="w-full h-64 md:h-80 object-cover flex-shrink-0">
+                </div>
+
+                <button
+                    class="absolute left-2 top-1/2 -translate-y-1/2 bg-white text-black rounded-full p-2 focus:outline-none"
+                    id="prev-btn">&larr;</button>
+                <button
+                    class="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-black rounded-full p-2 focus:outline-none"
+                    id="next-btn">&rarr;</button>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-green-600 mb-5">What Makes Integrity The Leader In Roofing?</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nihil magnam laborum excepturi,
+                    id exercitationem, cupiditate tempore quae obcaecati esse officiis voluptate maiores quam optio,
+                    corporis quos veniam pariatur nostrum fuga? Dolore praesentium totam cum nihil delectus
+                    exercitationem nisi error quae odit amet. Quis nostrum, quod, fugit hic amet quibusdam harum quas
+                    enim illo ipsa officiis impedit, maiores cumque ut.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+
+    <section class="relative bg-cover bg-center py-20 px-5 mt-20"
+        style="background-image: url('./images/roofImage.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+        <div class="relative z-10  bg-opacity-80 p-8 rounded-lg">
+            <h2 class="text-3xl md:text-4xl text-white font-bold text-center mb-6 fade-in">
+                Our Roofing Services
+            </h2>
+            <hr class="w-16 mx-auto border-green-500 mb-8 fade-in">
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <div
+                    class="fade-in bg-gray-800 bg-opacity-80 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="./images/roofRepair.png" alt="Roof Repairs" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4 text-green-400">Roof Repairs</h3>
+                        <p class="text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque hic earum suscipit iste fuga
+                            porro amet non quia architecto. Eos nulla, expedita aspernatur harum molestias nihil quidem
+                            fugit recusandae minus!
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="fade-in bg-gray-800 bg-opacity-80 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="./images/roofReplacement.png" alt="Roof Replacement" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4 text-green-400">Roof Replacement</h3>
+                        <p class="text-gray-300">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, voluptas? Excepturi
+                            mollitia fugit ipsum ipsa quam sit non voluptas harum earum ut, nesciunt asperiores
+                            similique commodi dolor sequi soluta quisquam!
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="fade-in bg-gray-800 bg-opacity-80 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="./images/emergencyServices.png" alt="Roof Replacement" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4 text-green-400">Emergency Services</h3>
+                        <p class="text-gray-300">
+                            With a comprehensive roof replacement, your home can enjoy the strength and durability of a
+                            brand-new rooftop. Our trusted and reliable services have been providing successful outcomes
+                            to
+                            customers since day one!
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="fade-in bg-gray-800 bg-opacity-80 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="./images/commercialService.png" alt="Roof Replacement" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4 text-green-400">Commercial Roofing</h3>
+                        <p class="text-gray-300">
+                            With a comprehensive roof replacement, your home can enjoy the strength and durability of a
+                            brand-new rooftop. Our trusted and reliable services have been providing successful outcomes
+                            to
+                            customers since day one!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Professional Affiliations -->
+
+    <section class="bg-green-600 text-white py-5  ">
+        <div
+            class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 ">
+
+            <h2 class="text-center md:text-left text-lg md:text-2xl font-bold">
+                Get A No-Hassle, Free Estimate Today
+            </h2>
+
+            <button class="bg-white text-green-600 font-bold py-2 px-6 rounded-md shadow hover:bg-gray-100">
+                Get My Free Estimate
+            </button>
+        </div>
+    </section>
+
+
+    <section class="py-10 ">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-center text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-20">
+                Professional Affiliations
+            </h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center">
+                <div class="w-full flex justify-center">
+                    <img src="./images/ProfessionalAffiliations1.png" alt="Professional Affiliations"
+                        class="h-16 object-contain">
+                </div>
+                <div class="w-full flex justify-center">
+                    <img src="./images/ProfessionalAffiliations2.png" alt="Professional Affiliations"
+                        class="h-16 object-contain">
+                </div>
+                <div class="w-full flex justify-center">
+                    <img src="./images/ProfessionalAffiliations3.png" alt="Professional Affiliations"
+                        class="h-16 object-contain">
+                </div>
+                <div class="w-full flex justify-center">
+                    <img src="./images/ProfessionalAffiliations4.png" alt="Professional Affiliations"
+                        class="h-16 object-contain">
+                </div>
+                <div class="w-full flex justify-center">
+                    <img src="./images/ProfessionalAffiliations5.png" alt="Professional Affiliations"
+                        class="h-16 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 mb-20">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-center text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-20">
+                Our Donations & Sponsorships​
+            </h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 justify-items-center">
+                <div class="w-full flex justify-center">
+                    <img src="./images/donation1.png" alt="donation image" class="h-20 object-contain">
+                </div>
+                <div class="w-full flex justify-center">
+                    <img src="./images/donation2.png" alt="donation image" class="h-20 object-contain">
+                </div>
+                <div class="w-full flex justify-center">
+                    <img src="./images/donation3.png" alt="donation image" class="h-20 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
