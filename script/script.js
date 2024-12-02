@@ -75,4 +75,22 @@ prevBtn.addEventListener('click', () => {
 window.addEventListener('resize', updateCarouselPosition);
 
 
+// FAQ 
+function toggleFAQ(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector("span:last-child");
+
+
+    if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+        icon.textContent = "−";
+    } else {
+        content.classList.add("hidden");
+        icon.textContent = "+";
+    }
+}
+
+
+
+
 

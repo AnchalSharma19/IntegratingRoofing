@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Top Icons Section -->
+    <div class="bg-green-600 flex justify-end py-2 px-4 space-x-4">
+        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
+            <img src="../icons/facebook.png" alt="Facebook" class="h-6 w-6">
+        </a>
+        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
+            <img src="../icons/instagram.png" alt="Instagram" class="h-6 w-6">
+        </a>
+        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
+            <img src="../icons/youtube.png" alt="YouTube" class="h-6 w-6">
+        </a>
+        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
+            <img src="../icons/linkedin.png" alt="LinkedIn" class="h-6 w-6">
+        </a>
+    </div>
+
+    <!-- Navbar Section -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="flex items-center space-x-2">
+                <img src="../images/logo.png" alt="Logo" class="h-20">
+            </div>
+
+            <nav class="hidden md:flex space-x-6 text-lg">
+                <a href="../index.html" class="text-green-700 font-medium hover:text-black">Home</a>
+                <a href="aboutUs.html" class="text-green-700 font-medium hover:text-black">About Us</a>
+                <a href="services.html" class="text-green-700 font-medium hover:text-black">Services</a>
+                <a href="products.html" class="text-green-700 font-medium hover:text-black">Products</a>
+                <a href="blog.html" class="text-green-700 font-medium hover:text-black">Blog</a>
+                <a href="contactUs.html" class="text-green-700 font-medium hover:text-black">Contact Us</a>
+            </nav>
+
+            <button class="hidden md:block bg-green-600 text-white px-4 py-2 hover:bg-black">
+                Call Now
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden flex items-center text-green-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-green-600 text-white px-6 py-4">
+            <a href="../index.html" class="block py-2 hover:text-black">Home</a>
+            <a href="aboutUs.html" class="block py-2 hover:text-black">About Us</a>
+            <a href="services.html" class="block py-2 hover:text-black">Services</a>
+            <a href="products.html" class="block py-2 hover:text-black">Products</a>
+            <a href="blog.html" class="block py-2 hover:text-black">Blog</a>
+            <a href="contactUs.html" class="block py-2 hover:text-black">Contact Us</a>
+            <button class="bg-white text-green-600 font-medium px-4 py-2 mt-4 hover:bg-black">
+                Call Now
+            </button>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+
+
+
+    <!-- Footer Section -->
+
+    <footer class="bg-white border-t border-gray-300 mt-10">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="../images/logo.png" alt="Integrity Roofing Logo" class="w-40 mb-4 h-20">
+                    <div class="flex space-x-4">
+
+                        <a href="" target="_blank" class="text-gray-600 hover:text-gray-800 text-2xl">
+                            <img src="../icons/instagramicon.png" class="h-7 w-7" alt="">
+                        </a>
+                        <a href="" target="_blank" class="text-gray-600 hover:text-gray-800 text-2xl">
+                            <img src="../icons/facebookicon.png" class="h-7 w-7" alt="">
+                        </a>
+
+                        <a href="" target="_blank" class="text-gray-600 hover:text-gray-800 text-2xl">
+                            <img src="../icons/linkedinicon.png" class="h-7 w-7" alt="">
+                        </a>
+                        <a href="" target="_blank" class="text-gray-600 hover:text-gray-800 text-2xl">
+                            <img src="../icons/youtubeicon.png" class="h-7 w-7" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">INFO</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-600 hover:text-gray-800">Home</a></li>
+                        <li><a href="aboutUs.html" class="text-gray-600 hover:text-gray-800">About Us</a></li>
+                        <li><a href="products.html" class="text-gray-600 hover:text-gray-800">Products</a></li>
+                        <li><a href="blog.html" class="text-gray-600 hover:text-gray-800">Blog</a></li>
+                        <li><a href="contactUs.html" class="text-gray-600 hover:text-gray-800">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">SERVICES</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Roof Repair</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Roof Replacement</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Emergency Services</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Commercial Roofing</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex justify-center md:justify-end">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509376!2d144.95373521531666!3d-37.81627944202157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2sVictoria!5e0!3m2!1sen!2sau!4v1636477127812!5m2!1sen!2sau"
+                        class="w-full h-64 rounded-md border" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mt-8 border-t h-20 pt-4 flex flex-col items-center justify-center text-center bg-black text-white py-4">
+        <p class="text-md">&copy; 2023 Integrity Roofing. All Rights Reserved.</p>
+    </div>
+
+
+</body>
+
+</html>
