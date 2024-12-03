@@ -2,18 +2,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
 
+    const mobileServicesBtn = document.getElementById('mobile-services-btn');
+    const mobileServicesMenu = document.getElementById('mobile-services-menu');
+
+    const mobileAreaBtn = document.getElementById('mobile-area-btn');
+    const mobileAreaMenu = document.getElementById('mobile-area-menu');
+
+    // Toggle main mobile menu
     menuToggle.addEventListener('click', (event) => {
         event.stopPropagation();
         mobileMenu.classList.toggle('hidden');
     });
 
+    // Toggle Services dropdown in mobile menu
+    mobileServicesBtn.addEventListener('click', (event) => {
+        event.stopPropagation();
+        mobileServicesMenu.classList.toggle('hidden');
+        // Close the Area dropdown if open
+        mobileAreaMenu.classList.add('hidden');
+    });
+
+    // Toggle Area Served dropdown in mobile menu
+    mobileAreaBtn.addEventListener('click', (event) => {
+        event.stopPropagation();
+        mobileAreaMenu.classList.toggle('hidden');
+        // Close the Services dropdown if open
+        mobileServicesMenu.classList.add('hidden');
+    });
+
+    // Close menus when clicking outside
     document.addEventListener('click', (event) => {
-        const isClickInside = mobileMenu.contains(event.target) || menuToggle.contains(event.target);
-        if (!isClickInside) {
+        // Close the mobile menu if clicking outside of it
+        if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
             mobileMenu.classList.add('hidden');
+        }
+        // Close the Services dropdown if clicking outside of it
+        if (!mobileServicesMenu.contains(event.target) && !mobileServicesBtn.contains(event.target)) {
+            mobileServicesMenu.classList.add('hidden');
+        }
+        // Close the Area Served dropdown if clicking outside of it
+        if (!mobileAreaMenu.contains(event.target) && !mobileAreaBtn.contains(event.target)) {
+            mobileAreaMenu.classList.add('hidden');
         }
     });
 });
+
 
 
 // Reviews Section Carousel
