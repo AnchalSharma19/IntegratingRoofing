@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service</title>
+    <title>Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../style/style.css">
     <script src="../script/script.js" defer></script>
@@ -15,6 +15,7 @@
 
 
     <!-- Navbar Section -->
+
 
     <nav class="bg-logo text-light w-full flex justify-between items-center shadow-xl z-40 fixed mb-40  pl-10 py-1">
         <div class="flex items-center pl-0">
@@ -85,7 +86,7 @@
 
     <div id="dropdown-menu"
         class="fixed lg:hidden bg-blue-800 text-lg space-y-4 py-8 px-8 w-full mt-0  shadow-xl hidden">
-        <a href="../index.html" class="dropdown-item text-white hover:text-gray-300">Home</a>
+        <a href="index.html" class="dropdown-item text-white hover:text-gray-300">Home</a>
         <a href="aboutUs.html" class="dropdown-item text-white hover:text-gray-300">About Us</a>
         <div class="dropdown-item">
             <a href="services.html" class="text-white hover:text-gray-300">Services</a>
@@ -119,136 +120,107 @@
         </div>
     </div>
 
+    <!-- Service Section -->
 
-    <!-- Service Two Section -->
-
-    <div class="relative h-[600px] bg-cover bg-center" style="background-image: url('../images/service2.png');">
+    <div class="relative h-[600px] bg-cover bg-center" style="background-image: url('../images/ourServices.png');">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <div class="relative flex justify-center items-center h-full">
-            <h1 class="text-white text-3xl md:text-3xl font-bold">ROOF REPLACEMENT</h1>
+            <h1 class="text-white text-3xl md:text-3xl font-bold">SERVICES</h1>
         </div>
     </div>
 
-    <header
-        class="bg-green-600 text-white pl-5 py-6 relative flex flex-col md:flex-row items-center md:justify-between">
-        <h1 class="text-2xl md:text-3xl font-bold mb-2 md:mb-0 text-center md:text-left">
-            CALL TODAY FOR A FREE ESTIMATE
-        </h1>
-        <button
-            class="mt-2 md:mr-10 md:mt-0 md:ml-auto bg-black text-white py-2 px-6 border-2 text-lg md:text-2xl font-semibold hover:bg-green-800">
-            Call Us
-        </button>
-    </header>
+    <section class="py-16 mt-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="group bg-white shadow-lg  p-6 hover:shadow-xl hover:scale-105 transition duration-300 hover:bg-black">
+                    <div class="flex justify-center mb-4">
+                        <img src="../icons/roofrepair.png" alt="Repair" class="h-20 icon-spin">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 text-center group-hover:text-green-600">Roof Repair
+                    </h3>
+                    <p class="text-gray-500 text-center mt-2 ">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing.
+                    </p>
+                    <div class="text-center mt-6">
+                        <a href="service1.html" class="bg-green-600 text-white px-4 py-2  ">Read More</a>
+                    </div>
+                </div>
 
+                <!-- Card 2 -->
+                <div
+                    class="group bg-white shadow-lg p-6 hover:shadow-xl hover:scale-105 transition duration-300 hover:bg-black">
+                    <div class="flex justify-center mb-4">
+                        <img src="../icons/roofreplacement.png" alt="Replacement" class="h-20 icon-spin">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 text-center group-hover:text-green-600">Roof
+                        Replacement
+                    </h3>
+                    <p class="text-gray-500 text-center mt-2">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, dolorum tempore? Expedita.
+                    </p>
+                    <div class="text-center mt-6">
+                        <a href="service2.html" class="bg-green-600 text-white px-4 py-2 ">Read More</a>
+                    </div>
+                </div>
 
+                <!-- Card 3 -->
+                <div
+                    class="group bg-white shadow-lg p-6 hover:shadow-xl hover:scale-105 transition duration-300 hover:bg-black">
+                    <div class="flex justify-center mb-4">
+                        <img src="../icons/broken-house.png" alt="Emergency Service" class="h-20 icon-spin">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 text-center group-hover:text-green-600">Emergency
+                        Services
+                    </h3>
+                    <p class="text-gray-500 text-center mt-2">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <div class="text-center mt-6">
+                        <a href="service3.html" class="bg-green-600 text-white px-4 py-2 ">Read More</a>
+                    </div>
+                </div>
 
-    <main class="container mx-auto px-4 md:px-16 lg:px-24 py-8 space-y-12 mt-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-            <div class="col-span-2">
-                <h2 class="text-2xl font-bold mb-5 ">Replacing Your Roof</h2>
-                <img src="../images/roofReplaceimg.png" alt="Roof Image" class="mb-7 mt-6">
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsam quisquam eius ab perferendis
-                    accusantium mollitia culpa asperiores corrupti fugit nam saepe cum debitis, in quasi labore
-                    distinctio modi est ex, porro ducimus tempora placeat! Necessitatibus modi sunt voluptas tempora
-                    magni numquam ipsum facere, iusto aut inventore optio harum, similique repellendus consequatur
-                    tempore reprehenderit ab omnis expedita laudantium, eos minus?
-                </p>
-            </div>
-
-            <div class="col-span-1 bg-gray-50 border border-gray-200 md:mt-12">
-                <h3 class="text-xl font-bold px-6 py-4 border-b border-gray-300 bg-gray-100">Roofing
-                    Services</h3>
-                <ul class="divide-y divide-gray-300">
-                    <li class="hover:bg-black">
-                        <a href="service1.html"
-                            class="flex justify-between items-center px-6 py-4 text-gray-700 font-medium hover:text-green-600">
-                            Roof Repair
-                            <span class="text-green-600">&rarr;</span>
-                        </a>
-                    </li>
-                    <li class="hover:bg-black">
-                        <a href="service3.html"
-                            class="flex justify-between items-center px-6 py-4 text-gray-700 font-medium hover:text-green-600">
-                            Emergency Services
-                            <span class="text-green-600">&rarr;</span>
-                        </a>
-                    </li>
-                    <li class="hover:bg-black">
-                        <a href="service4.html"
-                            class="flex justify-between items-center px-6 py-4 text-gray-700 font-medium hover:text-green-600">
-                            Commercial Roofing
-                            <span class="text-green-600">&rarr;</span>
-                        </a>
-                    </li>
-                </ul>
+                <!-- Card 4 -->
+                <div
+                    class="group bg-white shadow-lg  p-6 hover:shadow-xl hover:scale-105 transition duration-300 hover:bg-black">
+                    <div class="flex justify-center mb-4">
+                        <img src="../icons/commercialRoofing.png" alt="Commercial services" class="h-20 icon-spin">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 text-center group-hover:text-green-600">Commercial
+                        Services
+                    </h3>
+                    <p class="text-gray-500 text-center mt-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, doloribus.
+                    </p>
+                    <div class="text-center mt-6">
+                        <a href="service4.html" class="bg-green-600 text-white px-4 py-2 ">Read More</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
+    <!-- Call to Action Section -->
 
-        <div>
-            <h3 class="text-xl font-bold mb-4">Why Choose Integrity for Your Roof Replacement?</h3>
-            <p class="text-gray-700 leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, enim similique optio, amet quia
-                necessitatibus voluptatem, ea itaque cupiditate nostrum esse aliquam ducimus expedita. Maiores molestiae
-                ullam, modi aliquam earum porro nihil, consectetur quia vitae quae, omnis eius. Repellat, expedita?
+    <section class="bg-white py-12 mt-1">
+        <div class="container mx-auto text-center px-6">
+            <h3 class="text-2xl font-semibold text-gray-800">Want to see us in action?</h3>
+            <p class="text-gray-600 mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, vitae!
             </p>
-        </div>
-
-
-        <section>
-            <h2 class="text-xl font-bold mb-4">What to Expect During Your Roof Replacement</h2>
-            <p class="text-gray-700 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto pariatur, voluptates quas non
-                obcaecati incidunt hic beatae! Placeat doloribus nostrum velit tempora, id error, est, facilis beatae
-                laboriosam iusto dolore.
-            </p>
-            <p class="text-gray-700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus, velit impedit fuga quidem maiores
-                voluptatibus eveniet inventore, excepturi quas magni error consectetur incidunt atque nam molestias,
-                voluptate voluptas modi mollitia voluptatem nemo illum aperiam.
-            </p>
-        </section>
-    </main>
-
-
-    <!-- Service Areas Section -->
-
-    <div class="container mx-auto px-6 py-10 mb-4 md:pr-20 md:pl-20">
-        <div class="border ">
-            <div class="bg-gray-100 px-4 py-3 border-b">
-                <h3 class="text-lg font-semibold">Roofing Service Areas</h3>
-            </div>
-            <div class="p-4">
-                <p class="text-green-600 font-medium text-md flex flex-wrap gap-4">
-                    <span>Los Angeles</span> |
-                    <span>San Francisco</span> |
-                    <span>San Diego</span> |
-                    <span>San Jose</span>
-                </p>
+            <div class="mt-8">
+                <a href="contactUs.html" class="bg-green-600 text-white px-6 py-3 hover:bg-black">
+                    Get in touch now
+                </a>
             </div>
         </div>
-    </div>
-
-    <!-- Call-to-Action Section -->
-    <div class="bg-black text-white py-10 mb-20">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-            <h2 class="text-2xl md:text-2xl font-bold text-center md:text-left mb-6 md:mb-0">
-                Ready for us to take a look at your roof? Get in touch with us today!
-            </h2>
-            <a href="#" class="bg-white text-green-600 font-bold text-lg px-6 py-3  hover:text-black">
-                Contact Us
-            </a>
-        </div>
-    </div>
-
-
-
+    </section>
 
 
     <!-- Footer Section -->
-
 
     <footer class="bg-white border-t border-gray-300 mt-10 ">
         <div class="max-w-7xl mx-auto px-6 py-10 ">
@@ -313,6 +285,7 @@
             <a href="termsCondition.html">Terms & Conditions</a>
         </div>
     </div>
+
 
 </body>
 

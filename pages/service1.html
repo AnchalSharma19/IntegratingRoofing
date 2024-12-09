@@ -4,76 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style/style.css">
-    <script src="./script/script.js" defer></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/script.js" defer></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <!-- Top Icons Section -->
-    <div class="bg-green-600 flex justify-end py-2 px-4 space-x-4">
-        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
-            <img src="../icons/facebook.png" alt="Facebook" class="h-6 w-6">
-        </a>
-        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
-            <img src="../icons/instagram.png" alt="Instagram" class="h-6 w-6">
-        </a>
-        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
-            <img src="../icons/youtube.png" alt="YouTube" class="h-6 w-6">
-        </a>
-        <a href="#" class="p-2 bg-white rounded hover:opacity-75">
-            <img src="../icons/linkedin.png" alt="LinkedIn" class="h-6 w-6">
-        </a>
-    </div>
 
-    <!-- Navbar Section -->
-    <header class="bg-white shadow-lg">
-        <div class="container mx-auto flex justify-between items-center py-4 px-6">
-            <div class="flex items-center space-x-2">
-                <img src="../images/logo.png" alt="Logo" class="h-20">
-            </div>
+    <nav class="bg-logo text-light w-full flex justify-between items-center shadow-xl z-40 fixed mb-40  pl-10 py-1">
+        <div class="flex items-center pl-0">
+            <img src="../images/logo-removebg-preview.png" alt="Logo" style="height: 100px;">
+        </div>
 
-            <nav class="hidden md:flex space-x-6 text-lg">
-                <a href="../index.html" class="text-green-700 font-medium hover:text-black">Home</a>
-                <a href="aboutUs.html" class="text-green-700 font-medium hover:text-black">About Us</a>
-                <div class="relative group">
-                    <button class="text-green-700 font-medium hover:text-black">Services</button>
-                    <div class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded z-50">
-                        <a href="service1.html" class="block px-4 py-2 text-green-700 hover:bg-gray-100">Roof
-                            Repair</a>
-                        <a href="service2.html" class="block px-4 py-2 text-green-700 hover:bg-gray-100">Roof
-                            Replacement</a>
-                        <a href="service3.html" class="block px-4 py-2 text-green-700 hover:bg-gray-100">Emergency
-                            Services</a>
-                        <a href="service4.html" class="block px-4 py-2 text-green-700 hover:bg-gray-100">Commercial
-                            Roofing</a>
-                    </div>
-                </div>
+        <!-- Hamburger -->
 
-                <div class="relative group">
-                    <button class="text-green-700 font-medium hover:text-black">Area Served</button>
-                    <div class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded z-50">
-                        <a href="area1.html" class="block px-4 py-2 text-green-700 hover:bg-gray-100">Washington</a>
-                        <a href="area2.html" class="block px-4 py-2 text-green-700 hover:bg-gray-100">New
-                            York</a>
-                        <a href="area3.html" class="block px-4 py-2 text-green-700 hover:bg-gray-100">California</a>
-                    </div>
-                </div>
-
-                <a href="blog.html" class="text-green-700 font-medium hover:text-black">Blog</a>
-                <a href="gallery.html" class="text-green-700 font-medium hover:text-black">Gallery</a>
-                <a href="contactUs.html" class="text-green-700 font-medium hover:text-black">Contact Us</a>
-            </nav>
-
-            <button class="hidden md:block bg-green-600 text-white px-4 py-2 hover:bg-black">
-                Call Now
-            </button>
-
-            <!-- Mobile Menu Button -->
-            <button id="menu-toggle" class="md:hidden flex items-center text-green-600 focus:outline-none">
+        <div class="lg:hidden absolute right-6">
+            <button id="menu-toggle" class="text-black">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -81,36 +30,92 @@
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-green-600 text-white px-6 py-4">
-            <a href="../index.html" class="block py-2 hover:text-black">Home</a>
-            <a href="aboutUs.html" class="block py-2 hover:text-black">About Us</a>
-            <div class="relative">
-                <button id="mobile-services-btn" class="block w-full text-left py-2 hover:text-black">Services</button>
-                <div id="mobile-services-menu" class="hidden bg-green-700 rounded">
-                    <a href="./pages/service1.html" class="block px-4 py-2 hover:bg-green-800">Roof Repair</a>
-                    <a href="./pages/service2.html" class="block px-4 py-2 hover:bg-green-800">Roof Replacement</a>
-                    <a href="./pages/service3.html" class="block px-4 py-2 hover:bg-green-800">Emergency Services</a>
-                    <a href="./pages/service4.html" class="block px-4 py-2 hover:bg-green-800">Commercial Roofing</a>
-                </div>
-            </div>
+        <!-- Desktop Menu -->
 
-            <div class="relative">
-                <button id="mobile-area-btn" class="block w-full text-left py-2 hover:text-black">Area Served</button>
-                <div id="mobile-area-menu" class="hidden bg-green-700 rounded">
-                    <a href="./pages/area1.html" class="block px-4 py-2 hover:bg-green-800">Washington</a>
-                    <a href="./pages/area2.html" class="block px-4 py-2 hover:bg-green-800">New York</a>
-                    <a href="./pages/area3.html" class="block px-4 py-2 hover:bg-green-800">California</a>
-                </div>
-            </div>
+        <ul class="hidden lg:flex space-x-6  text-lg text-white pr-10">
+            <li><a href="../index.html" class="hover:text-black">Home</a></li>
+            <li><a href="aboutUs.html" class="hover:text-black">About Us</a></li>
 
-            <a href="blog.html" class="block py-2 hover:text-black">Blog</a>
-            <a href="./pages/blog.html" class="block py-2 hover:text-black">Gallery</a>
-            <a href="contactUs.html" class="block py-2 hover:text-black">Contact Us</a>
-            <button class="bg-white text-green-600 font-medium px-4 py-2 mt-4 hover:bg-black">
-                Call Now
-            </button>
+            <!-- Services Dropdown -->
+            <li class="relative group">
+                <a href="services.html" class="hover:text-black">Services</a>
+                <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2">
+                    <li><a href="service1.html" class="block px-4 py-2 hover:bg-gray-200">Roof
+                            Repair</a></li>
+                    <li><a href="service2.html" class="block px-4 py-2 hover:bg-gray-200">Roof
+                            Replacement</a></li>
+                    <li><a href="service3.html" class="block px-4 py-2 hover:bg-gray-200">Emergency
+                            Services</a></li>
+                    <li><a href="service4.html" class="block px-4 py-2 hover:bg-gray-200">Commercial
+                            Roofing</a></li>
+                </ul>
+            </li>
+
+            <!-- Area Served Dropdown -->
+
+            <li class="relative group">
+                <a href="areaServed.html" class="hover:text-black">Area Served</a>
+                <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2">
+                    <li><a href="areaOne.html" class="block px-4 py-2 hover:bg-gray-200">San Francisco</a>
+                    </li>
+                    <li><a href="areaTwo.html" class="block px-4 py-2 hover:bg-gray-200">San Jose</a></li>
+                    <li><a href="areaThree.html" class="block px-4 py-2 hover:bg-gray-200">Stockton</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="blog.html" class="hover:text-black">Blog</a></li>
+            <li><a href="gallery.html" class="hover:text-black">Gallery</a></li>
+            <li><a href="contactUs.html" class="hover:text-black">Contact Us</a></li>
+        </ul>
+
+        <div class="flex items-center space-x-4 pr-10">
+            <a href="contactUs.html">
+                <button
+                    class="bg-black text-white px-4 py-2  lg:block hidden transform transition duration-300 ease-in-out hover:bg-green-600 hover:scale-105 hover:shadow-lg">
+                    Call Now
+                </button>
+            </a>
         </div>
-    </header>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+
+    <div id="dropdown-menu"
+        class="fixed lg:hidden bg-blue-800 text-lg space-y-4 py-8 px-8 w-full mt-0  shadow-xl hidden">
+        <a href="../index.html" class="dropdown-item text-white hover:text-gray-300">Home</a>
+        <a href="aboutUs.html" class="dropdown-item text-white hover:text-gray-300">About Us</a>
+        <div class="dropdown-item">
+            <a href="services.html" class="text-white hover:text-gray-300">Services</a>
+            <div class="ml-4 space-y-2 hidden" id="servicesDropdown">
+                <a href="service1.html" class="block text-white hover:text-gray-300">Roof Repair</a>
+                <a href="service2.html" class="block text-white hover:text-gray-300">Roof Replacement</a>
+                <a href="service3.html" class="block text-white hover:text-gray-300">Emergency Services</a>
+                <a href="service4.html" class="block text-white hover:text-gray-300">Commercial Services</a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <a href="areaServed.html" class="text-white hover:text-gray-300">Area Served</a>
+            <div class="ml-4 space-y-2 hidden" id="areaServedDropdown">
+                <a href="areaOne.html" class="block text-white hover:text-gray-300">San Francisco</a>
+                <a href="areaTwo.html" class="block text-white hover:text-gray-300">San Jose</a>
+                <a href="areaThree.html" class="block text-white hover:text-gray-300">Stockton</a>
+            </div>
+        </div>
+
+        <a href="blog.html" class="dropdown-item text-white hover:text-gray-300">Blog</a>
+        <a href="gallery.html" class="dropdown-item text-white hover:text-gray-300">Gallery</a>
+        <a href="contactUs.html" class="dropdown-item text-white hover:text-gray-300">Contact Us</a>
+        <div class="flex justify-center">
+            <a href="contactUs.html">
+                <button
+                    class="bg-red-700 text-white px-4 py-2 rounded transform transition duration-300 ease-in-out hover:bg-red-600 hover:scale-105 hover:shadow-lg">
+                    Book Service
+                </button>
+            </a>
+        </div>
+    </div>
 
 
     <!-- Service One Section -->
@@ -150,7 +155,7 @@
                 </p>
             </div>
 
-            <div class="col-span-1 bg-gray-50 border border-gray-200 mt-12">
+            <div class="col-span-1 bg-gray-50 border border-gray-200 md:mt-12">
                 <h3 class="text-xl font-bold px-6 py-4 border-b border-gray-300 bg-gray-100">Roofing
                     Services</h3>
                 <ul class="divide-y divide-gray-300">
@@ -232,17 +237,10 @@
             </div>
             <div class="p-4">
                 <p class="text-green-600 font-medium text-md flex flex-wrap gap-4">
-                    <span>Washington</span> |
-                    <span>New York</span> |
-                    <span>California</span> |
-                    <span>Elkhart Roofer</span> |
-                    <span>Etna Green Roofer</span> |
-                    <span>Goshen Roofer</span> |
-                    <span>Leesburg Roofer</span> |
-                    <span>Nappanee Roofer</span> |
-                    <span>North Webster Roofer</span> |
-                    <span>Plymouth Roofer</span> |
-                    <span>Syracuse Roofer</span>
+                    <span>Los Angeles</span> |
+                    <span>San Francisco</span> |
+                    <span>San Diego</span> |
+                    <span>San Jose</span>
                 </p>
             </div>
         </div>
@@ -266,9 +264,9 @@
 
     <!-- Footer Section -->
 
-    <footer class="bg-white border-t border-gray-300 mt-10">
-        <div class="max-w-7xl mx-auto px-6 py-10">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+    <footer class="bg-white border-t border-gray-300 mt-10 ">
+        <div class="max-w-7xl mx-auto px-6 py-10 ">
+            <div class="grid grid-cols-1 mb-10 md:grid-cols-3 gap-8 md:justify-items-center">
 
                 <div class="flex flex-col items-center md:items-start">
                     <img src="../images/logo.png" alt="Integrity Roofing Logo" class="w-40 mb-4 h-20">
@@ -291,40 +289,44 @@
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4">INFO</h3>
                     <ul class="space-y-2">
                         <li><a href="../index.html" class="text-gray-600 hover:text-gray-800">Home</a></li>
                         <li><a href="aboutUs.html" class="text-gray-600 hover:text-gray-800">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-600 hover:text-gray-800">Services</a></li>
                         <li><a href="products.html" class="text-gray-600 hover:text-gray-800">Area Served</a></li>
-                        <li><a href="blog.html" class="text-gray-600 hover:text-gray-800">Blog</a></li>
-                        <li><a href="contactUs.html" class="text-gray-600 hover:text-gray-800">Contact Us</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-4">SERVICES</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Roof Repair</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Roof Replacement</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Emergency Services</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Commercial Roofing</a></li>
+                        <li><a href="blog.html" class="text-gray-600 hover:text-gray-800">Blog</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Gallery</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-800">Sitemap</a></li>
                     </ul>
                 </div>
+            </div>
+            <div class="mb-0 mt-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27405357175!2d-118.69192176893832!3d34.020730496993744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7c6b3a6b561%3A0xd1d6653c7b12c48!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1690377905984!5m2!1sen!2sin"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
 
-                <div class="flex justify-center md:justify-end">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509376!2d144.95373521531666!3d-37.81627944202157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2sVictoria!5e0!3m2!1sen!2sau!4v1636477127812!5m2!1sen!2sau"
-                        class="w-full h-64 rounded-md border" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div>
             </div>
         </div>
     </footer>
 
-    <div class="mt-8 border-t h-20 pt-4 flex flex-col items-center justify-center text-center bg-black text-white py-4">
-        <p class="text-md">&copy; 2023 Integrity Roofing. All Rights Reserved.</p>
+    <div
+        class="mt-0 border-t h-20 pt-2 flex flex-col md:flex-row md:items-center md:justify-between bg-black text-white px-4">
+        <p class="text-md text-center md:text-left mb-2 md:mb-0">
+            &copy; 2024 Integrity Roofing. All Rights Reserved.
+        </p>
+        <div class="flex justify-center md:justify-end space-x-4">
+            <a href="policy.html">Privacy Policy</a>
+            <a href="termsCondition.html">Terms & Conditions</a>
+        </div>
     </div>
-
 
 </body>
 

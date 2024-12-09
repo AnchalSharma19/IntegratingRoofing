@@ -1,53 +1,43 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const dropdownMenu = document.getElementById('dropdown-menu');
 
-    const mobileServicesBtn = document.getElementById('mobile-services-btn');
-    const mobileServicesMenu = document.getElementById('mobile-services-menu');
+    if (menuToggle && dropdownMenu) {
+        // Toggle the dropdown menu when the hamburger button is clicked
+        menuToggle.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent event from propagating
+            dropdownMenu.classList.toggle('hidden'); // Toggle visibility
+            dropdownMenu.classList.toggle('show');   // Add/Remove show class for visibility
+        });
 
-    const mobileAreaBtn = document.getElementById('mobile-area-btn');
-    const mobileAreaMenu = document.getElementById('mobile-area-menu');
+        document.addEventListener('click', (event) => {
+            if (!dropdownMenu.contains(event.target) && event.target !== menuToggle) {
+                dropdownMenu.classList.add('hidden');
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    }
 
-    // Toggle main mobile menu
-    menuToggle.addEventListener('click', (event) => {
-        event.stopPropagation();
-        mobileMenu.classList.toggle('hidden');
-    });
-
-    // Toggle Services dropdown in mobile menu
-    mobileServicesBtn.addEventListener('click', (event) => {
-        event.stopPropagation();
-        mobileServicesMenu.classList.toggle('hidden');
-        // Close the Area dropdown if open
-        mobileAreaMenu.classList.add('hidden');
-    });
-
-    // Toggle Area Served dropdown in mobile menu
-    mobileAreaBtn.addEventListener('click', (event) => {
-        event.stopPropagation();
-        mobileAreaMenu.classList.toggle('hidden');
-        // Close the Services dropdown if open
-        mobileServicesMenu.classList.add('hidden');
-    });
-
-    // Close menus when clicking outside
-    document.addEventListener('click', (event) => {
-        // Close the mobile menu if clicking outside of it
-        if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-            mobileMenu.classList.add('hidden');
-        }
-        // Close the Services dropdown if clicking outside of it
-        if (!mobileServicesMenu.contains(event.target) && !mobileServicesBtn.contains(event.target)) {
-            mobileServicesMenu.classList.add('hidden');
-        }
-        // Close the Area Served dropdown if clicking outside of it
-        if (!mobileAreaMenu.contains(event.target) && !mobileAreaBtn.contains(event.target)) {
-            mobileAreaMenu.classList.add('hidden');
-        }
+    document.querySelectorAll('.dropdown-item > a').forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault();
+            const dropdown = item.nextElementSibling;
+            if (dropdown) {
+                dropdown.classList.toggle('hidden');
+            }
+        });
     });
 });
 
 
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('nav');
+    if (window.scrollY > 50) {
+        navbar.classList.add('bg-green-600');
+    } else {
+        navbar.classList.remove('bg-green-600');
+    }
+});
 
 // Reviews Section Carousel
 
@@ -125,5 +115,22 @@ function toggleFAQ(button) {
 
 
 
-
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 3,
+    spaceBetween: 20,
+    breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+    },
+});
 
