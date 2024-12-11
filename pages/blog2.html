@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area Served</title>
+    <title>Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../style/style.css">
     <script src="../script/script.js" defer></script>
@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
 
     <!-- Navbar Section -->
 
@@ -119,76 +118,86 @@
         </div>
     </div>
 
+    <!-- Blog Section -->
 
-    <!-- Area Served Section -->
-
-    <div class="relative h-[600px] bg-cover bg-center" style="background-image: url('../images/areaServed.png');">
+    <div class="relative h-[600px] bg-cover bg-center" style="background-image: url('../images/blog.png');">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <div class="relative flex justify-center items-center h-full">
-            <h1 class="text-white text-3xl md:text-3xl font-bold">STOCKTON</h1>
+            <h1 class="text-white text-3xl md:text-3xl font-bold">BLOG</h1>
         </div>
     </div>
 
+    <div class="max-w-8xl mx-auto p-2 lg:p-12 bg-green-600">
+        <div>
+            <h1 class="text-2xl lg:text-2xl font-bold text-white text-center">
+                Preparing for Winter: A Comprehensive Guide
+            </h1>
+        </div>
+    </div>
 
-    <main class="container mx-auto px-4 md:px-16 lg:px-24 py-8 space-y-12 mt-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-            <div class="col-span-2">
-                <img src="../images/area2.png" alt="area 1" class="mb-7 mt-6">
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsam quisquam eius ab perferendis
-                    accusantium mollitia culpa asperiores corrupti fugit nam saepe cum debitis, in quasi labore
-                    distinctio modi est ex, porro ducimus tempora placeat! Necessitatibus modi sunt.
+    <!-- Blog Content -->
+    <div class="max-w-8xl mx-auto p-6 lg:p-12 mt-5">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2">
+                <p class="text-gray-600 text-sm mb-4">
+                    Posted on October 26, 2024 | By <span class="text-green-500 font-semibold">Integrity Roofing</span>
+                    | In
+                    <a href="#" class="text-green-500">Metal Roofing</a>,
+                    <a href="#" class="text-green-500">Shingle Roofs</a>
+                </p>
+                <img src="../images/blog2.png" alt="Metal Roof" class=" w-full h-96 object-cover">
+                <p class="mt-6 text-gray-800 leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perspiciatis quam officia harum
+                    obcaecati labore, minima facere magnam quibusdam explicabo excepturi totam similique rerum est,
+                    aliquam eius maiores delectus! Maxime fuga cum adipisci odit aliquam praesentium incidunt sunt
+                    libero quo eveniet dolorem ipsa, iusto optio ipsam, earum asperiores nostrum repellendus facere
+                    facilis ullam sed doloremque architecto dolores. Numquam, quaerat voluptas.
+                </p>
+
+                <h2 class="text-xl font-bold text-gray-800 mt-8">
+                    Understanding the Shingle Shortage
+                </h2>
+                <p class="mt-4 text-gray-800 leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nulla ipsa culpa illum velit
+                    recusandae repellendus quisquam soluta, hic praesentium porro eos deserunt temporibus reprehenderit,
+                    non perferendis nihil possimus ullam! Animi impedit repellendus dolorum exercitationem ex beatae
+                    quas, repellat, sit delectus at sapiente, voluptatibus est nostrum id maxime ipsa quod?
                 </p>
             </div>
 
-            <div class="col-span-1 bg-gray-50 border border-gray-200 md:mt-12">
-                <h3 class="text-xl font-bold px-6 py-4 border-b border-gray-300 bg-gray-100">Area Served</h3>
-                <ul class="divide-y divide-gray-300">
-                    <li class="hover:bg-black">
-                        <a href="area1.html"
-                            class="flex justify-between items-center px-6 py-4 text-gray-700 font-medium hover:text-green-600">
-                            San Francisco
-                            <span class="text-green-600">&rarr;</span>
-                        </a>
-                    </li>
-                    <li class="hover:bg-black">
-                        <a href="area2.html"
-                            class="flex justify-between items-center px-6 py-4 text-gray-700 font-medium hover:text-green-600">
-                            San Josh
-                            <span class="text-green-600">&rarr;</span>
-                        </a>
-                    </li>
-                </ul>
+            <!-- Sidebar -->
+            <div>
+                <div class="mb-8 mt-8">
+                    <div class="flex">
+                        <input id="search" type="text" placeholder="Search"
+                            class="flex-1 p-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <button class="px-4 bg-green-600 text-white rounded-r-md hover:bg-green-700">Search</button>
+                    </div>
+                </div>
+
+                <!-- Recent Posts -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">Recent Posts</h3>
+                    <ul class="space-y-4">
+                        <li><a href="blog1.html" class="text-green-500 hover:underline">Navigating a Shingle Shortage:
+                                The Compelling Case for Metal Roofing</a></li>
+                        <li><a href="blog3.html" class="text-green-500 hover:underline">Filing an Insurance Claim for
+                                Storm Damage</a></li>
+                        <li><a href="blog4.html" class="text-green-500 hover:underline">Why Roof Matters?</a></li>
+                    </ul>
+                </div>
+
+                <!-- Recent Comments -->
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">Recent Comments</h3>
+                    <p class="text-gray-600 italic">No comments to show.</p>
+                </div>
             </div>
         </div>
-
-        <section>
-            <h2 class="text-xl font-bold mb-4">Why Trust Integrity With Your Roof Repair?</h2>
-            <p class="text-gray-700 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto pariatur, voluptates quas non
-                obcaecati incidunt hic beatae! Placeat doloribus nostrum velit tempora, id error, est, facilis beatae
-                laboriosam iusto dolore.
-            </p>
-            <p class="text-gray-700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus, velit impedit fuga quidem maiores
-                voluptatibus eveniet inventore, excepturi quas magni error consectetur incidunt atque nam molestias,
-                voluptate voluptas modi mollitia voluptatem nemo illum aperiam.
-            </p>
-        </section>
-    </main>
-
-    <div class="bg-black text-white py-10 mb-20 mt-10">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-            <h2 class="text-2xl md:text-2xl font-bold text-center md:text-left mb-6 md:mb-0">
-                Ready for us to take a look at your roof? Get in touch with us today!
-            </h2>
-            <a href="#"
-                class="bg-white text-green-600 font-bold text-lg px-6 py-3  hover:text-black hover:bg-green-500">
-                Contact Us
-            </a>
-        </div>
     </div>
+    </div>
+
 
 
     <!-- Footer Section -->
