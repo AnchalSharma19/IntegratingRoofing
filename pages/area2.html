@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Area Served</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../style/style.css">
     <script src="../script/script.js" defer></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
-
 <body>
+
+
     <!-- Navbar Section -->
 
     <nav class="bg-logo text-light w-full flex justify-between items-center shadow-xl z-40 fixed mb-40  pl-10 py-1">
@@ -119,83 +120,75 @@
     </div>
 
 
-    <!-- Gallery Section -->
+    <!-- Area Served Section -->
 
-    <div class="relative h-[600px] bg-cover bg-center" style="background-image: url('../images/gallery.png');">
+    <div class="relative h-[600px] bg-cover bg-center" style="background-image: url('../images/areaServed.png');">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <div class="relative flex justify-center items-center h-full">
-            <h1 class="text-white text-3xl md:text-3xl font-bold">GALLERY</h1>
+            <h1 class="text-white text-3xl md:text-3xl font-bold">SAN JOSH</h1>
         </div>
     </div>
 
-    <div class="p-5 md:p-10 md:pt-20">
-        <div class=" columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-5 lg:gap-8 [&>img:not(:first-child)]:mt-5
-        lg:[&>img:not(:first-child)]:mt-8">
-            <div class="relative group">
-                <img src="../images/gallery1.png" alt="Gallery Image" class=" shadow">
-                <div
-                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 opacity-100 transition-opacity duration-300 rounded-lg">
-                    <p class="text-white font-semibold text-lg text-center">Lorem ipsum dolor.</p>
-                </div>
-            </div>
-            <div class="relative group mt-10">
-                <img src="../images/gallery2.png" alt="Gallery Image" class=" shadow">
-                <div
-                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                    <p class="text-white font-semibold text-lg text-center">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="relative group mt-10">
-                <img src="../images/gallery3.png" alt="Gallery Image" class=" shadow">
-                <div
-                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                    <p class="text-white font-semibold text-lg text-center">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="relative group mt-10">
-                <img src="../images/gallery4.png" alt="Gallery Image" class=" shadow">
-                <div
-                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                    <p class="text-white font-semibold text-lg text-center">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="relative group mt-10">
-                <img src="../images/gallery5.png" alt="Gallery Image" class=" shadow">
-                <div
-                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                    <p class="text-white font-semibold text-lg text-center">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Reprehenderit, eos.</p>
-                </div>
-            </div>
-            <div class="relative group mt-10">
-                <img src="../images/gallery6.png" alt="Gallery Image" class=" shadow">
-                <div
-                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                    <p class="text-white font-semibold text-lg text-center">Lorem ipsum dolor sit amet.</p>
-                </div>
-            </div>
-            <div class="relative group mt-10">
-                <img src="../images/gallery7.png" alt="Gallery Image" class=" shadow">
-                <div
-                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                    <p class="text-white font-semibold text-lg text-center">Lorem ipsum dolor.</p>
-                </div>
-            </div>
-            <div class="relative group mt-10">
-                <img src="../images/gallery8.png" alt="Gallery Image" class=" shadow">
-                <div
-                    class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                    <p class="text-white font-semibold text-lg text-center ">Lorem ipsum dolor sit amet
-                        consectetur
-                        adipisicing.</p>
-                </div>
+
+    <main class="container mx-auto px-4 md:px-16 lg:px-24 py-8 space-y-12 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+            <div class="col-span-2">
+                <img src="../images/area2.png" alt="area 1" class="mb-7 mt-6">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsam quisquam eius ab perferendis
+                    accusantium mollitia culpa asperiores corrupti fugit nam saepe cum debitis, in quasi labore
+                    distinctio modi est ex, porro ducimus tempora placeat! Necessitatibus modi sunt.
+                </p>
             </div>
 
+            <div class="col-span-1 bg-gray-50 border border-gray-200 md:mt-12">
+                <h3 class="text-xl font-bold px-6 py-4 border-b border-gray-300 bg-gray-100">Area Served</h3>
+                <ul class="divide-y divide-gray-300">
+                    <li class="hover:bg-black">
+                        <a href="area1.html"
+                            class="flex justify-between items-center px-6 py-4 text-gray-700 font-medium hover:text-green-600">
+                            San Francisco
+                            <span class="text-green-600">&rarr;</span>
+                        </a>
+                    </li>
+                    <li class="hover:bg-black">
+                        <a href="area3.html"
+                            class="flex justify-between items-center px-6 py-4 text-gray-700 font-medium hover:text-green-600">
+                            Stockton
+                            <span class="text-green-600">&rarr;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <h2 class="text-xl font-bold mb-4">Why Trust Integrity With Your Roof Repair?</h2>
+            <p class="text-gray-700 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto pariatur, voluptates quas non
+                obcaecati incidunt hic beatae! Placeat doloribus nostrum velit tempora, id error, est, facilis beatae
+                laboriosam iusto dolore.
+            </p>
+            <p class="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus, velit impedit fuga quidem maiores
+                voluptatibus eveniet inventore, excepturi quas magni error consectetur incidunt atque nam molestias,
+                voluptate voluptas modi mollitia voluptatem nemo illum aperiam.
+            </p>
+        </section>
+    </main>
+
+    <div class="bg-black text-white py-10 mb-20 mt-10">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+            <h2 class="text-2xl md:text-2xl font-bold text-center md:text-left mb-6 md:mb-0">
+                Ready for us to take a look at your roof? Get in touch with us today!
+            </h2>
+            <a href="#"
+                class="bg-white text-green-600 font-bold text-lg px-6 py-3  hover:text-black hover:bg-green-500">
+                Contact Us
+            </a>
         </div>
     </div>
-
 
 
     <!-- Footer Section -->
@@ -264,7 +257,7 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

@@ -58,10 +58,10 @@
             <li class="relative group">
                 <a href="areaServed.html" class="hover:text-black">Area Served</a>
                 <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-2">
-                    <li><a href="areaOne.html" class="block px-4 py-2 hover:bg-gray-200">San Francisco</a>
+                    <li><a href="area1.html" class="block px-4 py-2 hover:bg-gray-200">San Francisco</a>
                     </li>
-                    <li><a href="areaTwo.html" class="block px-4 py-2 hover:bg-gray-200">San Jose</a></li>
-                    <li><a href="areaThree.html" class="block px-4 py-2 hover:bg-gray-200">Stockton</a>
+                    <li><a href="area2.html" class="block px-4 py-2 hover:bg-gray-200">San Jose</a></li>
+                    <li><a href="area3.html" class="block px-4 py-2 hover:bg-gray-200">Stockton</a>
                     </li>
                 </ul>
             </li>
@@ -100,19 +100,19 @@
         <div class="dropdown-item">
             <a href="areaServed.html" class="text-white hover:text-gray-300">Area Served</a>
             <div class="ml-4 space-y-2 hidden" id="areaServedDropdown">
-                <a href="areaOne.html" class="block text-white hover:text-gray-300">San Francisco</a>
-                <a href="areaTwo.html" class="block text-white hover:text-gray-300">San Jose</a>
-                <a href="areaThree.html" class="block text-white hover:text-gray-300">Stockton</a>
+                <a href="area1.html" class="block text-white hover:text-gray-300">San Francisco</a>
+                <a href="area2.html" class="block text-white hover:text-gray-300">San Jose</a>
+                <a href="area3.html" class="block text-white hover:text-gray-300">Stockton</a>
             </div>
         </div>
 
         <a href="blog.html" class="dropdown-item text-white hover:text-gray-300">Blog</a>
         <a href="gallery.html" class="dropdown-item text-white hover:text-gray-300">Gallery</a>
         <a href="contactUs.html" class="dropdown-item text-white hover:text-gray-300">Contact Us</a>
-        <div class="flex justify-center">
+        <div class="flex ">
             <a href="contactUs.html">
                 <button
-                    class="bg-red-700 text-white px-4 py-2 rounded transform transition duration-300 ease-in-out hover:bg-red-600 hover:scale-105 hover:shadow-lg">
+                    class="bg-green-600 text-white px-4 py-2  transform transition duration-300 ease-in-out hover:bg-green-700 hover:scale-105 hover:shadow-lg">
                     Book Service
                 </button>
             </a>
@@ -122,13 +122,81 @@
 
     <!-- Area Served Section -->
 
-    <div class="relative h-[600px] bg-cover bg-center" style="background-image: url('../images/aboutPageImage.png');">
+    <div class="relative h-[600px] bg-cover bg-center" style="background-image: url('../images/areaServed.png');">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <div class="relative flex justify-center items-center h-full">
-            <h1 class="text-white text-3xl md:text-3xl font-bold">ABOUT US</h1>
+            <h1 class="text-white text-3xl md:text-3xl font-bold">AREA SERVED</h1>
         </div>
     </div>
+
+    <section class="bg-white py-10 px-5 mt-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-md overflow-hidden hover:bg-black hover:text-green-600">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="../images/area1.png" alt="San Josh" class="w-full h-full object-cover diagonal-image">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">San Francisco</h3>
+                        <p class="text-gray-500 text-sm mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Esse recusandae ipsa animi psa animi.</p>
+                        <a href="area1.html"
+                            class="text-green-500 text-sm mt-5 inline-block font-bold hover:underline">Read More
+                            &rarr;</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-md overflow-hidden hover:bg-black hover:text-green-600">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="../images/area2.png" alt="san josh" class="w-full h-full object-cover diagonal-image">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">San Josh</h3>
+                        <p class="text-gray-500 text-sm mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto, possimus.</p>
+                        <a href="area2.html"
+                            class="text-green-500 text-sm mt-5 inline-block font-bold hover:underline">Read More
+                            &rarr;</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-md overflow-hidden hover:bg-black hover:text-green-600">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="../images/area3.png" alt="Stockton" class="w-full h-full object-cover diagonal-image">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Stockton</h3>
+                        <p class="text-gray-500 text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ipsam unde sint, deserunt placeat assumenda animi modi repellat, harum cum voluptates
+                            necessitatibus! Deserunt alias itaque obcaecati consequuntur veniam.</p>
+                        <a href="area3.html"
+                            class="text-green-500 text-sm mt-5 inline-block font-bold hover:underline">Read More
+                            &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" py-16 px-5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl font-bold">Lorem ipsum dolor sit <br> amet consectetur.
+                </h2>
+                <p class="text-gray-700 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="contactUs.html"
+                    class="bg-green-600 text-white px-6 py-3  mt-6 inline-block hover:bg-black">Contact
+                    Us</a>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <img src="../images/area4.png" alt="area served" class="w-full">
+            </div>
+        </div>
+    </section>
+
+
 
 
 
